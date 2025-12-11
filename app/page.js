@@ -10,8 +10,12 @@ import game2 from '../components/game2';
 import navbar from '../components/navbar';
 import quiz from '../components/quiz.jsx';
 import welcome from '../components/welcome';
+<<<<<<< HEAD
  
 import styles from "../app.globals.css";
+=======
+import CatFishGame from '../components/cat-fish-game.jsx';
+>>>>>>> 4a8493307bb4877fdf6e2ec2fe3d965c6c793d78
 
 const initialFishes = [
   { id: "fish1", label: "🐟 Fish 1", isCorrect: false },
@@ -129,7 +133,7 @@ export default function HomePage() {
 
 return(
   <div>
-
+    <CatFishGame />
   </div>
 
 )
