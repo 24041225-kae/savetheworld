@@ -12,16 +12,15 @@ export default function HomePage() {
 
   return (
     <div className="relative min-h-screen">
-      
+
       {/* Welcome animation */}
       {showWelcome && (
         <Welcome onComplete={() => setShowWelcome(false)} />
       )}
 
       <div
-        className={`transition-opacity duration-1000 ${
-          showWelcome ? "opacity-0" : "opacity-100"
-        }`}
+        className={`transition-opacity duration-1000 ${showWelcome ? "opacity-0" : "opacity-100"
+          }`}
       >
 
         {/* HOME INTRO SCREEN */}
@@ -31,10 +30,10 @@ export default function HomePage() {
 
         {/* GAME 1 SCREEN */}
         {screen === "game1" && (
-          <Game1 />
+          <Game1 onNextGame={() => setScreen("game2")} />
         )}
 
-                {/* GAME 2 SCREEN */}
+        {/* GAME 2 SCREEN */}
         {screen === "game2" && (
           <Game2 />
         )}

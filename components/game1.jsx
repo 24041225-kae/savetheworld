@@ -8,7 +8,7 @@ const initialFishes = [
   { id: "fish3", label: "Verbal Abuse", isCorrect: false },
 ];
 
-export default function Game1() {
+export default function Game1({ onNextGame }) {
   const [fishes, setFishes] = useState(initialFishes);
   const [catState, setCatState] = useState("idle");
   const [message, setMessage] = useState("");
@@ -63,7 +63,7 @@ export default function Game1() {
   };
 
   if (game1Content) {
-    return <Game1Content onBack={() => setGame1Content(false)} />;
+    return <Game1Content onBack={() => setGame1Content(false)} onNextGame={onNextGame} />;
   }
 
   return (
