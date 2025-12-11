@@ -4,27 +4,51 @@
 import React from 'react';
 export default function About() {
   return (
-    <div className="about-container">
-        <h1>About Us</h1>
-        <p>Welcome to our project! We are a dedicated team committed to making a positive impact on the world through innovative solutions and collaborative efforts.</p>
-        <h2>Our Team</h2>
-        <ul>
-            <li><strong><img src='kaelynn.jpg'>Kaelynn Fong</img></strong> - Project Manager</li>
-            <li><strong><img src='luoqian.jpg'>Guo Luo Qian</img></strong> - Lead Developer</li>
-            <li><strong><img src='chiaen.jpg'>Cheng Chia En</img></strong> - UX/UI Designer</li>
-        </ul>
-        <h2>Our Mission</h2>
-        <p>Our mission is to create engaging and educational experiences that raise awareness about important global issues. Through our games and interactive content, we aim to inspire change and encourage proactive behavior in our community.</p>
-        <h3>Group Photo</h3>
-        <img src="threeofus.jpg" alt="Group Photo" style={{width: '400px', height: 'auto'}}/>
-        <form>
-        <h2>Feeback Form</h2>
-        <label>Your Feedback:</label><br/>
-        <textarea rows="4" cols="50" placeholder="Enter your feedback here..."></textarea><br/>
-        <button type="submit">Submit</button>
+    <div className="about-container" style={{padding: '40px', maxWidth: '1200px', margin: '0 auto'}}>
+        <h1 style={{fontSize: '32px', marginBottom: '20px', textAlign: 'center', color: '#4A90E2'}}>About Us</h1>
+        <p style={{fontSize: '16px', marginBottom: '30px', lineHeight: '1.6', textAlign: 'center'}}>Welcome to our project! We are a dedicated team committed to making a positive impact on the world through innovative solutions and collaborative efforts.</p>
+        
+        <h2 style={{fontSize: '24px', marginBottom: '20px', textAlign: 'center', color: '#4A90E2'}}>Our Team</h2>
+        <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px', marginBottom: '40px'}}>
+            <div style={{textAlign: 'center', padding: '20px', border: '2px solid #B7DBFF', borderRadius: '12px', backgroundColor: '#F0F7FF'}}>
+                <img src="/kaelynn.jpg" alt="Kaelynn Fong" loading="lazy" style={{width: '150px', height: '150px', borderRadius: '50%', objectFit: 'cover', marginBottom: '15px'}}/>
+                <h3 style={{fontSize: '18px', margin: '10px 0', color: '#4A90E2'}}><strong>Kaelynn Fong</strong></h3>
+                <p style={{fontSize: '14px', color: '#666'}}>Project Manager</p>
+            </div>
+            <div style={{textAlign: 'center', padding: '20px', border: '2px solid #B7DBFF', borderRadius: '12px', backgroundColor: '#F0F7FF'}}>
+                <img src="/luoqian.jpg" alt="Guo Luo Qian" loading="lazy" style={{width: '150px', height: '150px', borderRadius: '50%', objectFit: 'cover', marginBottom: '15px'}}/>
+                <h3 style={{fontSize: '18px', margin: '10px 0', color: '#4A90E2'}}><strong>Guo Luo Qian</strong></h3>
+                <p style={{fontSize: '14px', color: '#666'}}>Lead Developer</p>
+            </div>
+            <div style={{textAlign: 'center', padding: '20px', border: '2px solid #B7DBFF', borderRadius: '12px', backgroundColor: '#F0F7FF'}}>
+                <img src="/chiaen.jpg" alt="Cheng Chia En" loading="lazy" style={{width: '150px', height: '150px', borderRadius: '50%', objectFit: 'cover', marginBottom: '15px'}}/>
+                <h3 style={{fontSize: '18px', margin: '10px 0', color: '#4A90E2'}}><strong>Cheng Chia En</strong></h3>
+                <p style={{fontSize: '14px', color: '#666'}}>UX/UI Designer</p>
+            </div>
+        </div>
+        
+        <h2 style={{fontSize: '24px', marginBottom: '20px', textAlign: 'center', color: '#4A90E2'}}>Our Mission</h2>
+        <p style={{fontSize: '16px', marginBottom: '30px', lineHeight: '1.6', textAlign: 'center'}}>Our mission is to create engaging and educational experiences that raise awareness about important global issues. Through our games and interactive content, we aim to inspire change and encourage proactive behavior in our community.</p>
+        
+        <h3 style={{fontSize: '20px', marginBottom: '15px', textAlign: 'center', color: '#4A90E2'}}>Group Photos</h3>
+        <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', marginBottom: '40px', justifyItems: 'center'}}>
+            <div style={{textAlign: 'center'}}>
+                <img src="/threeofus.jpg" alt="Group Photo" loading="lazy" style={{width: '400px', height: 'auto', borderRadius: '12px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)'}}/>
+            </div>
+            <div style={{textAlign: 'center'}}>
+                <img src="/pic2ofus.jpg" alt="Group Photos" loading="lazy" style={{width: '400px', height: 'auto', borderRadius: '12px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)'}}/>
+            </div>
+        </div>
+        
+        <form style={{maxWidth: '600px', margin: '0 auto', padding: '30px', backgroundColor: '#F0F7FF', borderRadius: '12px', border: '2px solid #B7DBFF'}}>
+            <h2 style={{fontSize: '20px', marginBottom: '20px', color: '#4A90E2'}}>Feedback Form</h2>
+            <label style={{fontSize: '16px', marginBottom: '10px', display: 'block'}}>Your Feedback:</label>
+            <textarea rows="5" cols="50" placeholder="Enter your feedback here..." style={{width: '100%', padding: '10px', marginBottom: '15px', borderRadius: '6px', border: '1px solid #B7DBFF', fontFamily: 'Arial', fontSize: '14px'}}></textarea>
+            <button type="submit" style={{padding: '10px 20px', backgroundColor: '#4A90E2', color: 'white', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '16px', fontWeight: 'bold'}}>Submit</button>
         </form>
-        <h2>Contact Us</h2>
-        <p>If you have any feedback or encounter any issues, please feel free to reach out to us at <a href="mailto:luowian@gmail.com"> gmail.com</a>. We value your input and are here to assist you.</p>
+
+        <h2 style={{fontSize: '24px', marginBottom: '20px', marginTop: '40px', textAlign: 'center', color: '#4A90E2'}}>Contact Us</h2>
+        <p style={{fontSize: '16px', textAlign: 'center', lineHeight: '1.6'}}>If you have any feedback or encounter any issues, please feel free to reach out to us <a href="mailto:rphuumonia@gmail.com" style={{color: '#4A90E2', textDecoration: 'none', fontWeight: 'bold'}}>here</a>. We value your input and are here to assist you.</p>
     </div>
-    );
+  );
 }

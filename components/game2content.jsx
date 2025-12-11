@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import GalleryShowcase from "./galleryShowcase";
 
 export default function Game2Content({ onDone }) {
     return (
@@ -43,6 +44,25 @@ export default function Game2Content({ onDone }) {
                             Removing one species affects many others in the food chain.
                         </li>
                     </ul>
+                </section>
+
+                <hr className="my-8 border-t-2 border-[#B7DBFF]" />
+
+                {/* Gallery Showcase */}
+                <section className="mb-10">
+                    <h2 className="text-2xl font-bold text-[#6BB9F0] mb-3">📸 Gallery Showcase</h2>
+                    <p className="text-gray-700 leading-relaxed mb-4">
+                        Here are some cases about wildlife affected by poaching:
+                    </p>
+        
+
+                    <GalleryShowcase
+                        images={[
+                            { src: "/kansasimg.webp", subtitle: "Deer Hunting", caption: " The reasons vary widely, but fundamentally, people shoot deer for population control, food, recreation (hunting), and economic benefits tied to hunting activities. These reasons intersect and influence one another in complex ways." },
+                            { src: "/grantgazelle.webp", subtitle: "Grant's Gazelle", caption: "Grant's gazelles are often hunted for their meat, hides, and horns. Despite legal protections in place in many regions, poaching remains a significant threat. With their tall, curved horns and their tendency to live in areas with sparse vegetation, they are easy for hunters to follow and kill." },
+                            { src: "/buffalo.webp", subtitle: "African Buffalo", caption: "African buffalo are targeted for their meat in many countries. Their recent decline in numbers is attributed to poaching, which occurs even within national parks. Wild water buffalo have also long been targets for hunters—both for sport and for meat. Now that they are legally protected, it's hoped that hunting levels are declining. However, economic growth within the countries where water buffalo are found may fuel the demand for wildlife products that are seen as status symbols." },
+                        ]}
+                    />
                 </section>
 
                 <hr className="my-8 border-t-2 border-[#B7DBFF]" />
