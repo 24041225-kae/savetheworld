@@ -43,7 +43,7 @@ export default function Home({ onStart }) {
             </h2>
             <p className="text-gray-700 leading-relaxed">
               After reading the information, you'll answer a simple question.
-              But instead of clicking, drag the <b className="text-[#4A90E2]">correct fish </b> 
+              But instead of clicking, drag the <b className="text-[#4A90E2]">correct answer </b> 
               and <b className="text-[#4A90E2]">feed it to the cat</b>! If you're right, you move on to the next game.
             </p>
         </section>
