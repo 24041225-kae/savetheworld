@@ -17,12 +17,19 @@ const Welcome = ({ onComplete }) => {
       },
     });
 
+    // Animate clouds moving left and fading out
     tl.add(".cloud", {
       translateX: -100,
       opacity: 0,
       scale: 1.5,
       delay: stagger(100),
-    })
+    }, 0);
+
+    // Animate WELCOME text scaling up and fading out (in parallel)
+    tl.add(".welcome-text", {
+      scale: 3,
+      opacity: 0,
+    }, 0)
       // fade out entire screen slightly overlapping
       .add(
         containerRef.current,
@@ -34,7 +41,6 @@ const Welcome = ({ onComplete }) => {
         "-=500" // start 500ms before previous ends
       );
   }, [onComplete]);
-
   return (
     <div
       ref={containerRef}
@@ -55,7 +61,7 @@ const Welcome = ({ onComplete }) => {
       {/* Cloud 5 */}
       <div className="cloud absolute -bottom-20 -right-20 w-[500px] h-[300px] bg-white rounded-full opacity-95 blur-3xl" />
 
-      <h1 className="cloud text-4xl font-bold text-white tracking-widest drop-shadow-lg z-10">
+      <h1 className="welcome-text text-4xl font-bold text-white tracking-widest drop-shadow-lg z-10">
         WELCOME
       </h1>
     </div>
