@@ -18,9 +18,9 @@ export default function Game1({ onNextGame }) {
 
   const handleDragStart = (e, fishId) => {
     e.dataTransfer.setData("text/plain", fishId);
-  };
+  }; //when user drags fish
 
-  const handleDragOver = (e) => e.preventDefault();
+  const handleDragOver = (e) => e.preventDefault(); //when user drags over cat
 
   const handleDrop = (e) => {
     e.preventDefault();
@@ -60,7 +60,7 @@ export default function Game1({ onNextGame }) {
         setMessage("");
       }, 600);
     }
-  };
+  }; //when user drops fish
 
   if (game1Content) {
     return <Game1Content onBack={() => setGame1Content(false)} onNextGame={onNextGame} />;

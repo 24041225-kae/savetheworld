@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import { animate, stagger, createTimeline } from "animejs";
+import { animate, stagger, createTimeline } from "animejs"; //for the clouds
 
 const Welcome = ({ onComplete }) => {
   const containerRef = useRef(null);
@@ -17,7 +17,7 @@ const Welcome = ({ onComplete }) => {
       },
     });
 
-    // Animate clouds moving left and fading out
+    // animate clouds moving left and fading out
     tl.add(".cloud", {
       translateX: -100,
       opacity: 0,
@@ -25,7 +25,7 @@ const Welcome = ({ onComplete }) => {
       delay: stagger(100),
     }, 0);
 
-    // Animate WELCOME text scaling up and fading out (in parallel)
+    // animate  text scaling up and fading out (in parallel)
     tl.add(".welcome-text", {
       scale: 3,
       opacity: 0,
@@ -38,7 +38,7 @@ const Welcome = ({ onComplete }) => {
           duration: 500,
           ease: "linear",
         },
-        "-=500" // start 500ms before previous ends
+        "-=500" 
       );
   }, [onComplete]);
   return (
@@ -46,19 +46,14 @@ const Welcome = ({ onComplete }) => {
       ref={containerRef}
       className="fixed inset-0 z-50 flex items-center justify-center bg-blue-300 overflow-hidden pointer-events-none"
     >
-      {/* Cloud 1 */}
       <div className="cloud absolute top-1/4 left-1/4 w-64 h-32 bg-white rounded-full opacity-90 blur-xl transform -translate-x-1/2 -translate-y-1/2" />
 
-      {/* Cloud 2 */}
       <div className="cloud absolute top-1/2 left-3/4 w-96 h-48 bg-white rounded-full opacity-80 blur-2xl" />
 
-      {/* Cloud 3 */}
       <div className="cloud absolute bottom-1/4 left-1/3 w-80 h-40 bg-white rounded-full opacity-90 blur-xl" />
 
-      {/* Cloud 4 */}
       <div className="cloud absolute top-1/3 left-1/2 w-72 h-36 bg-white rounded-full opacity-85 blur-xl" />
 
-      {/* Cloud 5 */}
       <div className="cloud absolute -bottom-20 -right-20 w-[500px] h-[300px] bg-white rounded-full opacity-95 blur-3xl" />
 
       <h1 className="welcome-text text-4xl font-bold text-white tracking-widest drop-shadow-lg z-10">

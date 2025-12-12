@@ -4,7 +4,7 @@ import { useState } from "react";
 import Game2Content from "./game2content";
 import Ending from "./ending";
 
-// --- CASE STUDY TASKS USING YOUR POACHING STORY ---
+// case studies
 const tasksData = [
   {
     id: 1,
@@ -13,7 +13,7 @@ const tasksData = [
       "Over a period of three years, game wardens from the Kansas Department of Wildlife and Parks investigated a large poaching ring across four counties in northwest Kansas. The investigation uncovered 140 wildlife-related offences committed between 2015 and 2019. In total, nine people were charged. Wardens identified 25 illegally taken deer (mostly mule deer), as well as eight turkeys, one antelope and other wildlife. Many of the animals were taken out of season, shot with firearms while the hunters held only archery permits, or killed without any permit at all.",
     question:
       "Q1: How many deer were found to have been taken illegally during this investigation?",
-    // we accept both numeric and word forms
+    // accepting both numeric and word forms
     answers: ["25", "twenty five", "twenty-five"],
   },
   {
@@ -36,6 +36,7 @@ const tasksData = [
   },
 ];
 
+// game 2 component
 export default function Game2() {
   const [openTaskId, setOpenTaskId] = useState(tasksData[0].id);
   const [userAnswers, setUserAnswers] = useState({});
@@ -55,14 +56,14 @@ export default function Game2() {
 
   const toggleTask = (id) => {
     setOpenTaskId((current) => (current === id ? null : id));
-  };
+  }; //when user clicks on task
 
   const handleInputChange = (id, value) => {
     setUserAnswers((prev) => ({ ...prev, [id]: value }));
     if (status[id] && status[id] !== "idle") {
       setStatus((prev) => ({ ...prev, [id]: "idle" }));
     }
-  };
+  }; //when user types in input
 
   const handleSubmit = (task) => {
     const raw = userAnswers[task.id] || "";
@@ -82,7 +83,7 @@ export default function Game2() {
     } else {
       setStatus((prev) => ({ ...prev, [task.id]: "wrong" }));
     }
-  };
+  }; //when user submits answer
 
   // Check if all tasks are completed
   const allTasksCompleted = tasksData.every(

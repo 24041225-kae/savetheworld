@@ -24,25 +24,31 @@ export default function Game2Content({ onDone }) {
                 {/* Consequences */}
                 <section className="mb-10">
                     <h3 className="text-gray-700 leading-relaxed mb-4">
-                        Animal hunting has serious effects on wildlife populations and the environment.
-                        Many species become endangered due to illegal or excessive hunting.
+                       Poaching is a major threat to wildlife and refers to the illegal hunting or capturing of animals for profit,
+        such as ivory, fur, horns, or exotic pets. This practice has caused severe declines in many animal populations,
+        pushing some species close to extinction.
                     </h3>
 
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        When animals disappear from their natural habitats, the entire ecosystem becomes unbalanced.
-                        Predators lose prey, plants grow uncontrollably, and biodiverse environments collapse.
+                               When animals are removed from their natural habitats through poaching, ecosystems become unstable.
+        Predators lose their food sources, prey populations grow uncontrollably, and natural balances within the
+        food chain are disrupted. Over time, this can lead to long-term damage to biodiversity and the environment.
+
                     </p>
 
                     <ul className="list-disc list-inside text-gray-700 space-y-2">
                         <li>
-                            Species like pangolins, tigers, and elephants are threatened due to illegal hunting.
+                            Species such as pangolins, tigers, and elephants are threatened due to illegal hunting.
                         </li>
                         <li>
-                            Over-hunting reduces population sizes, making it harder for species to recover.
+                            Over-hunting reduces population sizes, making it harder for species to recover, faster than they can reproduce.
                         </li>
                         <li>
-                            Removing one species affects many others in the food chain.
+                            The loss of even a single species can affect many others in the food chain, leading to an imbalance in the ecosystem.
                         </li>
+                        <a href='https://financialcrimeacademy.org/consequences-of-illegal-wildlife-trade/' target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                            Learn more about the consequences of illegal wildlife trade.
+                        </a>
                     </ul>
                 </section>
 
