@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
@@ -16,21 +14,19 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Backstory
+Huumonia began from our team’s discussion around the “save the world” problem statement and how it relates to issues happening locally. We became more aware of cases of animal abuse and poaching within our own surroundings, and how these actions can have lasting effects on wildlife populations and ecosystems. Seeing these issues close to home made the problem feel more real and motivated us to create a platform that raises awareness rather than ignoring it.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+One of the challenges we faced was working with unfamiliar tools. While some of us had experience with React, we were new to the Next.js framework and the Anime.js animation library. Although they share similarities, their differences made the learning process challenging. We were also less familiar with Tailwind CSS, as we usually relied on external CSS files. Through teamwork, experimentation, and mutual support, we gradually adapted to these tools.
 
-## Learn More
+Huumonia is an interactive website that introduces our team, shares our mission, and allows users to give feedback. This project helped us grow both technically and personally, showing us how technology can be used to address meaningful local issues.
 
-To learn more about Next.js, take a look at the following resources:
+### DECLARATION OF AI
+For some parts of the project, we used AI to help keep a consistent style and make our website look more appealing.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Functionalities
+Huumonia begins with a welcome screen that introduces users to the purpose of the website and guides them through the experience. Users are then brought through two interactive games that present real-life case studies related to animal abuse and poaching. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+In each game, users can read through the scenarios and identify the key problems involved, encouraging critical thinking and awareness. The website also provides information on local efforts addressing these issues and allows users to learn more about how they can help, including redirection to local donation initiatives and support organisations.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
