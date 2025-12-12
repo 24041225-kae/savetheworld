@@ -8,7 +8,7 @@ export default function Game2Content({ onDone }) {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-    
+
     return (
         <div className="flex flex-col items-center justify-center min-h-screen px-6 py-12 bg-[#E8F5FF]">
             <div className="bg-white shadow-xl rounded-3xl p-10 w-full max-w-4xl border-[3px] border-[#B7DBFF]">
@@ -68,9 +68,9 @@ export default function Game2Content({ onDone }) {
 
                     <GalleryShowcase
                         images={[
-                            { src: "/kansasimg.webp", subtitle: "Deer Hunting", caption: " The reasons vary widely, but fundamentally, people shoot deer for population control, food, recreation (hunting), and economic benefits tied to hunting activities. These reasons intersect and influence one another in complex ways." },
-                            { src: "/grantgazelle.webp", subtitle: "Grant's Gazelle", caption: "Grant's gazelles are often hunted for their meat, hides, and horns. Despite legal protections in place in many regions, poaching remains a significant threat. With their tall, curved horns and their tendency to live in areas with sparse vegetation, they are easy for hunters to follow and kill." },
-                            { src: "/buffalo.webp", subtitle: "African Buffalo", caption: "African buffalo are targeted for their meat in many countries. Their recent decline in numbers is attributed to poaching, which occurs even within national parks. Wild water buffalo have also long been targets for hunters—both for sport and for meat. Now that they are legally protected, it's hoped that hunting levels are declining. However, economic growth within the countries where water buffalo are found may fuel the demand for wildlife products that are seen as status symbols." },
+                            { src: "./kansasimg.webp", subtitle: "Deer Hunting", caption: " The reasons vary widely, but fundamentally, people shoot deer for population control, food, recreation (hunting), and economic benefits tied to hunting activities. These reasons intersect and influence one another in complex ways." },
+                            { src: "./grantgazelle.webp", subtitle: "Grant's Gazelle", caption: "Grant's gazelles are often hunted for their meat, hides, and horns. Despite legal protections in place in many regions, poaching remains a significant threat. With their tall, curved horns and their tendency to live in areas with sparse vegetation, they are easy for hunters to follow and kill." },
+                            { src: "./buffalo.webp", subtitle: "African Buffalo", caption: "African buffalo are targeted for their meat in many countries. Their recent decline in numbers is attributed to poaching, which occurs even within national parks. Wild water buffalo have also long been targets for hunters—both for sport and for meat. Now that they are legally protected, it's hoped that hunting levels are declining. However, economic growth within the countries where water buffalo are found may fuel the demand for wildlife products that are seen as status symbols." },
                         ]}
                     />
                 </section>

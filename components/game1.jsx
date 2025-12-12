@@ -76,7 +76,7 @@ export default function Game1({ onNextGame }) {
         <h2 className="text-xl font-semibold text-[#6BB9F0]">Physical Abuse</h2>
 
         <img
-          src="/game1.png"
+          src="./game1.png"
           alt="case study"
           className="w-48 mt-3 rounded-lg shadow"
         />
