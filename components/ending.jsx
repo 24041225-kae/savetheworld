@@ -4,6 +4,10 @@ import About from "./about";
 import { useState, useEffect, useRef } from "react";
 
 export default function Ending() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const [goToAbout, setGoToAbout] = useState(false);
   const [expandedVolunteer, setExpandedVolunteer] = useState(null);
   const [visibleItems, setVisibleItems] = useState(new Set());

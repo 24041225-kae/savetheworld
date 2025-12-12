@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Game2Content from "./game2content";
 import Ending from "./ending";
 
@@ -38,6 +38,10 @@ const tasksData = [
 
 // game 2 component
 export default function Game2() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [openTaskId, setOpenTaskId] = useState(tasksData[0].id);
   const [userAnswers, setUserAnswers] = useState({});
   const [status, setStatus] = useState({});
@@ -92,7 +96,7 @@ export default function Game2() {
   
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-b from-slate-50 to-slate-100 py-12 px-4">
+    <div className="min-h-screen w-full bg-gradient-to-b from-slate-50 to-slate-100 pt-0 pb-12 px-4">
       <div className="mx-auto max-w-3xl text-center">
         <h1 className="mb-2 text-4xl font-bold text-slate-900">
           Game 2 – Poaching Case Quiz

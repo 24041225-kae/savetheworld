@@ -1,12 +1,16 @@
 "use client";
 
-import React from "react";
+import React, {useEffect} from "react";
 import Link from "next/link";
 
 
 export default function Game1Content({ onBack, onNextGame }) {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen px-6 py-12 bg-[#E8F5FF]">
+        <div className="flex flex-col items-center justify-center min-h-screen px-6 pt-1 bg-[#E8F5FF]">
             <div className="bg-white shadow-xl rounded-3xl p-10 w-full max-w-4xl border-[3px] border-[#B7DBFF]">
 
                 {/* Title */}

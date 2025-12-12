@@ -1,8 +1,12 @@
 // intro of our project and team members
 //contact for feedbacks and any issues occurred
 // heading "About Us"
-import React from 'react';
+import React, {useEffect} from 'react';
 export default function About() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
   return (
     <div className="about-container" style={{padding: '40px', maxWidth: '1200px', margin: '0 auto'}}>
         <h1 style={{fontSize: '32px', marginBottom: '20px', textAlign: 'center', color: '#4A90E2'}}>About Us</h1>
