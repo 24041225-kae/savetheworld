@@ -14,17 +14,17 @@ export default function About() {
         
         <h2 style={{fontSize: '24px', marginBottom: '20px', textAlign: 'center', color: '#4A90E2'}}>Our Team</h2>
         <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px', marginBottom: '40px'}}>
-            <div style={{textAlign: 'center', padding: '20px', border: '2px solid #B7DBFF', borderRadius: '12px', backgroundColor: '#F0F7FF'}}>
+            <div className="flex flex-col items-center" style={{textAlign: 'center', padding: '20px', border: '2px solid #B7DBFF', borderRadius: '12px', backgroundColor: '#F0F7FF'}}>
                 <img src="/kaelynn.jpg" alt="Kaelynn Fong" loading="lazy" style={{width: '150px', height: '150px', borderRadius: '50%', objectFit: 'cover', marginBottom: '15px'}}/>
                 <h3 style={{fontSize: '18px', margin: '10px 0', color: '#4A90E2'}}><strong>Kaelynn Fong</strong></h3>
                 <p style={{fontSize: '14px', color: '#666'}}>Project Manager</p>
             </div>
-            <div style={{textAlign: 'center', padding: '20px', border: '2px solid #B7DBFF', borderRadius: '12px', backgroundColor: '#F0F7FF'}}>
+            <div className="flex flex-col items-center" style={{textAlign: 'center', padding: '20px', border: '2px solid #B7DBFF', borderRadius: '12px', backgroundColor: '#F0F7FF'}}>
                 <img src="/luoqian.jpg" alt="Guo Luo Qian" loading="lazy" style={{width: '150px', height: '150px', borderRadius: '50%', objectFit: 'cover', marginBottom: '15px'}}/>
                 <h3 style={{fontSize: '18px', margin: '10px 0', color: '#4A90E2'}}><strong>Guo Luo Qian</strong></h3>
                 <p style={{fontSize: '14px', color: '#666'}}>Lead Developer</p>
             </div>
-            <div style={{textAlign: 'center', padding: '20px', border: '2px solid #B7DBFF', borderRadius: '12px', backgroundColor: '#F0F7FF'}}>
+            <div className="flex flex-col items-center" style={{textAlign: 'center', padding: '20px', border: '2px solid #B7DBFF', borderRadius: '12px', backgroundColor: '#F0F7FF'}}>
                 <img src="/chiaen.jpg" alt="Cheng Chia En" loading="lazy" style={{width: '150px', height: '150px', borderRadius: '50%', objectFit: 'cover', marginBottom: '15px'}}/>
                 <h3 style={{fontSize: '18px', margin: '10px 0', color: '#4A90E2'}}><strong>Cheng Chia En</strong></h3>
                 <p style={{fontSize: '14px', color: '#666'}}>UX/UI Designer</p>
@@ -44,9 +44,9 @@ export default function About() {
             </div>
         </div>
         
-        <form style={{maxWidth: '600px', margin: '0 auto', padding: '30px', backgroundColor: '#F0F7FF', borderRadius: '12px', border: '2px solid #B7DBFF'}}>
+        <form style={{maxWidth: '600px', margin: '0 auto', padding: '30px', backgroundColor: '#F0F7FF', color: '#000000ff', borderRadius: '12px', border: '2px solid #B7DBFF'}}>
             <h2 style={{fontSize: '20px', marginBottom: '20px', color: '#4A90E2'}}>Feedback Form</h2>
-            <label style={{fontSize: '16px', marginBottom: '10px', display: 'block'}}>Your Feedback:</label>
+            <label style={{fontSize: '16px', marginBottom: '10px', display: 'block', color: '#000000ff'}}>Your Feedback:</label>
             <textarea rows="5" cols="50" placeholder="Enter your feedback here..." style={{width: '100%', padding: '10px', marginBottom: '15px', borderRadius: '6px', border: '1px solid #B7DBFF', fontFamily: 'Arial', fontSize: '14px'}}></textarea>
             <button type="submit" style={{padding: '10px 20px', backgroundColor: '#4A90E2', color: 'white', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '16px', fontWeight: 'bold'}}>Submit</button>
         </form>
