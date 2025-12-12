@@ -30,7 +30,6 @@ const Welcome = ({ onComplete }) => {
         easing: "linear",
       }, "-=500");
 
-    // ✅ GUARANTEED EXIT (THIS IS THE KEY)
     const timer = setTimeout(() => {
       onComplete?.();
     }, 2200); // slightly longer than animation
