@@ -20,7 +20,7 @@ export default function About() {
                 <p style={{fontSize: '14px', color: '#666'}}>Project Manager</p>
             </div>
             <div className="flex flex-col items-center" style={{textAlign: 'center', padding: '20px', border: '2px solid #B7DBFF', borderRadius: '12px', backgroundColor: '#F0F7FF'}}>
-                <img className="hover:animate-spin"src="./luoqian.jpg" alt="Guo Luo Qian" loading="lazy" style={{width: '150px', height: '150px', borderRadius: '50%', objectFit: 'cover', marginBottom: '15px'}}/>
+                <img className="hover:animate-spin" src="./luoqian.jpg" alt="Guo Luo Qian" loading="lazy" style={{width: '150px', height: '150px', borderRadius: '50%', objectFit: 'cover', marginBottom: '15px'}}/>
                 <h3 style={{fontSize: '18px', margin: '10px 0', color: '#4A90E2'}}><strong>Guo Luo Qian</strong></h3>
                 <p style={{fontSize: '14px', color: '#666'}}>Lead Developer</p>
             </div>
@@ -31,13 +31,16 @@ export default function About() {
             </div>
         </div>
         
-        <h2 style={{fontSize: '24px', marginBottom: '20px', textAlign: 'center', color: '#4A90E2'}}>Our Mission</h2>
-        <p style={{fontSize: '16px', marginBottom: '30px', lineHeight: '1.6', textAlign: 'center'}}>Our mission is to create engaging and educational experiences that raise awareness about important global issues. Through our games and interactive content, we aim to inspire change and encourage proactive behavior in our community.</p>
+        <div style={{padding: '20px', border: '2px solid #B7DBFF', borderRadius: '12px', backgroundColor: '#F0F7FF'}}>
+            <h2 style={{fontSize: '24px', marginBottom: '20px', textAlign: 'center', color: '#4A90E2'}}>Our Mission</h2>
+            <p style={{fontSize: '16px', marginBottom: '30px', lineHeight: '1.6', textAlign: 'center', color: '#000000ff'}}>Our mission is to create engaging and educational experiences that raise awareness about important global issues. Through our games and interactive content, we aim to inspire change and encourage proactive behavior in our community.</p>
+        </div>
 
-        
-        <h2 style={{fontSize: '24px', marginBottom: '20px', textAlign: 'center', color: '#4A90E2'}}>About Huumonia</h2>
-        <i style={{fontSize: '16px', marginBottom: '30px', lineHeight: '1.6', textAlign: 'center'}}>Our Story</i>
-        <p style={{fontSize: '16px', marginBottom: '30px', lineHeight: '1.6', textAlign: 'center'}}>Huumonia began from our team's discussion around the “save the world” problem statement and how it connects to issues happening locally. As we researched further, we became more aware of animal abuse and poaching cases within our own surroundings. These incidents showed us how harmful actions against animals do not only affect individual lives, but can also disrupt wildlife populations and ecosystems over time. Seeing these problems close to home made them feel more real, and motivated us to create a platform that encourages awareness instead of indifference.</p>
+        <div className="mb-6 mt-6" style={{padding: '20px', border: '2px solid #B7DBFF', borderRadius: '12px', backgroundColor: '#F0F7FF'}}>
+            <h2 style={{fontSize: '24px', marginBottom: '20px', textAlign: 'center', color: '#4A90E2'}}>About Huumonia</h2>
+            <i className="flex flex-col items-center" style={{fontSize: '16px', marginBottom: '30px', lineHeight: '1.6', textAlign: 'center', color: '#000000ff'}}>Our Story</i>
+            <p style={{fontSize: '16px', marginBottom: '30px', lineHeight: '1.6', textAlign: 'center', color: '#000000ff'}}>Huumonia began from our team's discussion around the “save the world” problem statement and how it connects to issues happening locally. As we researched further, we became more aware of animal abuse and poaching cases within our own surroundings. These incidents showed us how harmful actions against animals do not only affect individual lives, but can also disrupt wildlife populations and ecosystems over time. Seeing these problems close to home made them feel more real, and motivated us to create a platform that encourages awareness instead of indifference.</p>
+        </div>
         
         <h3 style={{fontSize: '20px', marginBottom: '15px', textAlign: 'center', color: '#4A90E2'}}>Group Photos</h3>
         <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', marginBottom: '40px', justifyItems: 'center'}}>
