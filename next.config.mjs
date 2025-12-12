@@ -4,6 +4,7 @@ const nextConfig = {
 
   basePath: "/F_9",
   assetPrefix: "/F_9/",
+  trailingSlash: true,
   output: "export",
 
   images: {
