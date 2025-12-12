@@ -52,12 +52,73 @@ export default function About() {
             </div>
         </div>
         
-        <form style={{maxWidth: '600px', margin: '0 auto', padding: '30px', backgroundColor: '#F0F7FF', color: '#000000ff', borderRadius: '12px', border: '2px solid #B7DBFF'}}>
-            <h2 style={{fontSize: '20px', marginBottom: '20px', color: '#4A90E2'}}>Feedback Form</h2>
-            <label style={{fontSize: '16px', marginBottom: '10px', display: 'block', color: '#000000ff'}}>Your Feedback:</label>
-            <textarea rows="5" cols="50" placeholder="Enter your feedback here..." style={{width: '100%', padding: '10px', marginBottom: '15px', borderRadius: '6px', border: '1px solid #B7DBFF', fontFamily: 'Arial', fontSize: '14px'}}></textarea>
-            <button type="submit" style={{padding: '10px 20px', backgroundColor: '#4A90E2', color: 'white', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '16px', fontWeight: 'bold'}}>Submit</button>
-        </form>
+        <form
+  onSubmit={(e) => {
+    e.preventDefault();
+    const message = e.target.feedback.value;
+    window.location.href = `mailto:rphuumonia@gmail.com?subject=Huumonia Feedback&body=${encodeURIComponent(message)}`;
+  }}
+  style={{
+    maxWidth: '600px',
+    margin: '0 auto',
+    padding: '30px',
+    backgroundColor: '#F0F7FF',
+    color: '#000000ff',
+    borderRadius: '12px',
+    border: '2px solid #B7DBFF',
+  }}
+>
+  <h2 style={{ fontSize: '20px', marginBottom: '20px', color: '#4A90E2' }}>
+    Feedback Form
+  </h2>
+
+  <label
+    htmlFor="feedback"
+    style={{
+      fontSize: '16px',
+      marginBottom: '10px',
+      display: 'block',
+      color: '#000000ff',
+    }}
+  >
+    Your Feedback:
+  </label>
+
+  <textarea
+    id="feedback"
+    name="feedback"
+    rows="5"
+    placeholder="Enter your feedback here..."
+    required
+    style={{
+      width: '100%',
+      padding: '10px',
+      marginBottom: '15px',
+      borderRadius: '6px',
+      border: '1px solid #B7DBFF',
+      fontFamily: 'Arial',
+      fontSize: '14px',
+      resize: 'vertical',
+    }}
+  ></textarea>
+
+  <button
+    type="submit"
+    style={{
+      padding: '10px 20px',
+      backgroundColor: '#4A90E2',
+      color: 'white',
+      border: 'none',
+      borderRadius: '6px',
+      cursor: 'pointer',
+      fontSize: '16px',
+      fontWeight: 'bold',
+    }}
+  >
+    Submit
+  </button>
+</form>
+
 
         <h2 style={{fontSize: '24px', marginBottom: '20px', marginTop: '40px', textAlign: 'center', color: '#4A90E2'}}>Contact Us</h2>
         <p style={{fontSize: '16px', textAlign: 'center', lineHeight: '1.6'}}>If you have any feedback or encounter any issues, please feel free to reach out to us <a href="mailto:rphuumonia@gmail.com" style={{color: '#4A90E2', textDecoration: 'none', fontWeight: 'bold'}}>here</a>. We value your input and are here to assist you.</p>
