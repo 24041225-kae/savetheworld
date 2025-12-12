@@ -13,6 +13,9 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+OR
+Open [[https://24041225-kae.github.io/F_9/ ](https://24041225-kae.github.io/F_9/ ) with your browser to see the live result.
+
 
 ## Backstory
 Huumonia began from our team’s discussion around the “save the world” problem statement and how it relates to issues happening locally. We became more aware of cases of animal abuse and poaching within our own surroundings, and how these actions can have lasting effects on wildlife populations and ecosystems. Seeing these issues close to home made the problem feel more real and motivated us to create a platform that raises awareness rather than ignoring it.
